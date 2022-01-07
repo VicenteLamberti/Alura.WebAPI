@@ -37,12 +37,18 @@ Na API no método de deleção, caso ocorra tudo certo, é retornado o código 2
 
 --Padronização
 
-Nos métodos da API, para que não seja necessário um manual de como serão os nomes dos métodos, é usado uma convenção.
+Nos métodos da API, para que não seja necessário um manual de como serão os nomes dos métodos, é usado uma convenção. Para isso é necessário utilizar os verbos Http corretos para cada tipo de requisição. Na arquitetura MVC, o padrão das rotas são Controller, Action e Id (opcional). Na API o correto é fazer as requisições pelos próprios verbos - GET, POST, PUT, DELETE. Dessa forma as rotas são Controller e Verbo.
 
-Para isso é necessário utilizar os verbos Http corretos para cada tipo de requisição. 
-Na arquitetura MVC, o padrão das rotas são Controller, Action e Id (opcional).
-Na API o correto é fazer as requisições pelos próprios verbos - GET, POST, PUT, DELETE.
-Dessa forma as rotas são Controller e Verbo
+As Controllers que serão usadas para API, não herdam de Controller, e sim de ControllerBase. Pois ela não possui suporte a Views, evitando o risco de cometer erros.
+
+As Controllers de API devem possuir os Data Annotation [ApiController].
+
+As Controllers de API devem possuir os Data Annotation  
+
+Os métodos de API devem possuir os Data Annotation [Verbo] ou Verbo("{id}")], caso precisar do id na requisição.
+
+
+
 
 
 
