@@ -47,8 +47,7 @@ As Controllers de API devem possuir os Data Annotation
 
 Os métodos de API devem possuir os Data Annotation [Verbo] ou Verbo("{id}")], caso precisar do id na requisição.
 
-
-
+Quando utilizamos esses padrões ( métodos HTTP para informar a operação; cada rota indicando um recurso, exemplo um livro, ou uma coleção de livros; repostas com código de status; cabeçalhos com dados adicionais, exemplo o location (que é a url gerada depois de inserir um novo objeto); corpo retornando informações em formato específico (JSON, XML etc). Dizemos que a a API está seguindo uma arquitetura REST (Representation State Transfer), podemos dizer também que a aplicação que adere à esse estilo é RESTful.
 
 
 
