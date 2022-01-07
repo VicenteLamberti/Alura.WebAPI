@@ -34,3 +34,16 @@ O método é o Created(). Que precisa de alguns parâmetros, como a URL do novo 
 Caso ocorra o erro na inserção é retornado o status code 400 (Bad Request).
 
 Na API no método de deleção, caso ocorra tudo certo, é retornado o código 204 (No Content) - Que diz realmente que não tem mais conteúdo apontando para aquele Id.
+
+--Padronização
+
+Nos métodos da API, para que não seja necessário um manual de como serão os nomes dos métodos, é usado uma convenção.
+
+Para isso é necessário utilizar os verbos Http corretos para cada tipo de requisição. 
+Na arquitetura MVC, o padrão das rotas são Controller, Action e Id (opcional).
+Na API o correto é fazer as requisições pelos próprios verbos - GET, POST, PUT, DELETE.
+Dessa forma as rotas são Controller e Verbo
+
+
+
+
