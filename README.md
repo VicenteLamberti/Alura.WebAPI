@@ -7,3 +7,5 @@ No padrão MVC, o retorno das informações são em VIEWS, que são páginas HTM
 Como por exemplo Json.
 
 Caso um método retorne algum objeto, por padrão o retorno será em Json, porém fazer isso em uma aplicação MVC é preciso tomar alguns cuidados. Pois caso o Id que seja passado na URL, não exista a requisição será feita, mas não haverá um retorno.
+
+Para padronizar as Actions que serão da API, ou seja, onde os retornos serão Json, é uma boa prática criar novas Controllers com esses novos métodos.
